@@ -6,6 +6,10 @@ A free, reproducible game-modding example from [ModLab — independent Universal
 
 A small single-player Mindustry mod, created with Codex and the Universal Modder workflow. Mindustry's official JSON content API supplies both turrets and their real bullet physics. This ZIP includes the editable source and original geometric turret sprites.
 
+**[Free mod ZIP on itch.io](https://modlab-guides.itch.io/modlab-homing-lab)** · **[Watch the recorded lab on YouTube](https://www.youtube.com/watch?v=2ClBd7utWY8)**
+
+The video is a montage of actual game-window captures, with English captions; it is not a continuous 24 fps recording.
+
 ## Requirements and cost
 
 - Mindustry **160.7**, desktop. Verified on macOS 15.7, Apple M1 Max, the official itch.io Mac download with bundled Java 25.0.1.
@@ -53,3 +57,4 @@ Mindustry official modding guide: https://mindustrygame.github.io/wiki/modding/1
 Mindustry v160.7 source: https://github.com/Anuken/Mindustry/tree/v160.7
 Universal Modder revision used: 8370faa8e114baf33acdb23079aff552a7728c4b
 This mod's original code and geometric sprites are MIT licensed. No game binaries or extracted game assets are included. Mindustry and Universal Modder are separate projects; ModLab is not affiliated with them.
+
