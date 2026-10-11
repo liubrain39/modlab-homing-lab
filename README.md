@@ -17,6 +17,12 @@ The video is a montage of actual game-window captures, with English captions; it
 - No account, API key, paid assets, external mod loader, Java installation or coding agent is needed to run this ZIP. A coding agent may charge usage fees if you choose to rebuild or edit with AI.
 - The supplied ZIP was tested in a clean profile. See https://modlabguides.online/workshop/mindustry-homing for current recorded results.
 
+## Find this mod in-game
+
+In Mindustry **160.7**, choose **Mods → Mod Browser**, search **ModLab**, then open **ModLab Homing Lab**. The detail page shows the Universal Modder description and **Install**, **Repo**, and **View Releases** controls.
+
+We verified the search result and detail page on macOS 15.7 on October 11, 2026. We have not tested a fresh installation through the Mod Browser. Use the ZIP method below for the installation route we reproduced in a clean profile.
+
 ## Install and open
 
 1. Back up existing Mindustry data. Use a fresh lab profile if you already play.
