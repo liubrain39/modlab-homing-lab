@@ -46,6 +46,18 @@ Both lanes have the same moving targets, fixed aim point, speed 2.7, damage 12, 
 
 Extract the ZIP to a new folder, edit `content/blocks/homing.json`, then zip **the files inside the folder** so mod.json is at the ZIP root. With the game closed, replace the old ZIP in the mods folder, restart and compare. Keep the baseline unchanged. Suggested first experiment: homingPower 0.02 versus 0.08. These are experiment values, not guaranteed results on every build.
 
+## When the package will not load
+
+Start with the [ZIP, JAR and dependency checks](https://modlabguides.online/guides/mod-not-loading). This is an owner-maintained guide, prepared with AI assistance and checked against official sources; it is not an independent recommendation.
+
+The original package has `mod.json` at the archive root and declares internal name `modlab-homing`, minimum game build `160.7`, and no required dependencies field. Its existing gameplay evidence covers the published JSON/JavaScript ZIP on the stated Mac setup.
+
+A wrapper folder is not automatically a packaging failure. In the [pinned Mindustry v160.7 loader](https://github.com/Anuken/Mindustry/blob/17012d61d9e4c3cbd9820d87e81c24495486ac53/core/src/mindustry/mod/Mods.java#L1100), a lone top-level directory becomes the inspected root. A sibling file or a second wrapper changes where metadata is searched. The guide compares the original flat layout with two explicitly invented layouts, then explains how to inspect the first loading error.
+
+For a different package, identify its type before copying files: a Java source ZIP does not become a compiled JAR by renaming it; server plugins belong to the server environment. Required dependency names come from internal metadata, not a display label or ZIP filename. See the [official Java mod and plugin guide](https://mindustrygame.github.io/wiki/modding/2-plugins/).
+
+These new explanations are source-reviewed, not new game runs or claims of compatibility on other systems. They do not change the mod, ZIP release, recorded counts or the untested status of the `0.02` variation. Reviewed 13 October 2026.
+
 ## Remove and recover
 
 Press F9, then disable or remove **ModLab Homing Lab** in Mods and restart. Your ordinary game should open without the ModLab menu item. This demonstration does not save a campaign or overwrite an existing map. The optional `modlab-last-run.json` in the data folder is only a result log. For existing worlds that contain the new turrets, return to a backup created before installing the mod.
